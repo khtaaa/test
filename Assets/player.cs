@@ -23,12 +23,12 @@ public class player : MonoBehaviour {
 			GetComponent<SpriteRenderer> ().sprite = walk [AnIn];
 		}
 
-		if (Input.GetButton ("Fire1"))
+		if (Input.GetKey(KeyCode.Space))
 		{
 			walkCheck = true;
 			GetComponent<Rigidbody2D> ().velocity = new Vector2 (speed, GetComponent<Rigidbody2D> ().velocity.y);
 		}
-		else if(Input.GetButtonUp("Fire1")&&walkCheck)
+		else if(Input.GetKeyUp(KeyCode.Space)&&walkCheck)
 		{
 			walkCheck = false;
 			GetComponent<Rigidbody2D> ().velocity = Vector2.zero;

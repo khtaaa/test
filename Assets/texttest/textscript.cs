@@ -64,14 +64,14 @@ public class textscript : MonoBehaviour {
 		}
 	}
 
-	//いっきにテキストを最後まで表示させる
+	//テキストを最後まで表示させる
 	void nexttext()
 	{
 		for (; textnunber< text[alltextnunber].Length; textnunber++) {
 			if (text[alltextnunber] [textnunber] == ' ') {
-				textbox.text += "\n";
+				textbox.text += "\n";//改行
 			} else {
-				textbox.text += text[alltextnunber] [textnunber];
+				textbox.text += text[alltextnunber] [textnunber];//一文字表示
 			}
 		}
 	}

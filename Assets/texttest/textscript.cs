@@ -23,7 +23,7 @@ public class textscript : MonoBehaviour {
 			//テキスト表示最中にクリックしたとき最後までテキストを表示させる
 			if (Input.GetMouseButtonUp (0)) {
 				nexttext();
-				textcheck = false;
+				textcheck = false;//テキスト表示終了
 			}
 
 			//現在の文字数が最後まで表示されるまで起動
